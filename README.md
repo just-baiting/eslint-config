@@ -4,9 +4,9 @@ Shared eslint config for just-baiting projects
 
 Has 3 different individual packages:
 
-Base JS (@just-baiting/eslint-config)
-React (@just-baiting/eslint-config-react)
-Typescript (@just-baiting/eslint-config-typescript)
+- Base JS (@just-baiting/eslint-config)
+- React (@just-baiting/eslint-config-react)
+- Typescript (@just-baiting/eslint-config-typescript)
 
 ## Installation
 
