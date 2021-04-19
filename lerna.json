@@ -1,10 +1,14 @@
 {
   "packages": ["packages/*"],
   "version": "independent",
-  "npmClient": "yarn",
   "useWorkspaces": true,
   "publishConfig": {
     "access": "public"
   },
-  "rejectCycles": "true"
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
 }
