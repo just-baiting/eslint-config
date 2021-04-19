@@ -1,5 +1,5 @@
 {
-  "name": "@just-baiting/eslint-config",
+  "name": "eslint-config",
   "version": "0.0.1",
   "author": "Michael Nguyen",
   "license": "ISC",
