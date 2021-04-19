@@ -1,0 +1,36 @@
+{
+  "name": "@just-baiting/eslint-config",
+  "version": "0.0.1",
+  "author": "Michael Nguyen",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "lerna:publish": "lerna publish from-package --yes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-baiting/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-baiting/eslint-config/issues"
+  },
+  "homepage": "https://github.com/just-baiting/eslint-config#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@just-baiting/prettier-config": "^0.0.1",
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^10.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
