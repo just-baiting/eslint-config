@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/eslint-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint config for just-baiting",
   "repository": "https://github.com/just-baiting/eslint-config",
   "author": "Just Baiting",
