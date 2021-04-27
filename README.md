@@ -20,6 +20,6 @@ yarn add @just-baiting/eslint-config -D
 
 ```js
 {
-  "extends" : ["@just-baiting/eslint-config", "@just-baiting/react"]
+  "extends" : ["@just-baiting/eslint-config", "@just-baiting/eslint-config-react"]
 }
 ```
