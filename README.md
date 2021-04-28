@@ -17,9 +17,30 @@ yarn add @just-baiting/eslint-config -D
 ```
 
 ## Usage
+Edit your ```.eslintrc.json``` with one of the following to use.
+
+### Core
 
 ```js
 {
+  "extends" : ["@just-baiting/eslint-config"]
+}
+```
+
+### React
+```js
+{
   "extends" : ["@just-baiting/eslint-config", "@just-baiting/eslint-config-react"]
+}
+```
+
+### Next.js
+
+```js
+{
+  "extends": ["@just-baiting/eslint-config", "@just-baiting/eslint-config-react"],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }
 ```
