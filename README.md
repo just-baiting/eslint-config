@@ -13,7 +13,11 @@ Has 3 different individual packages:
 You can install each individually and extend them as you need them
 
 ```bash
-yarn add @just-baiting/eslint-config -D
+yarn add -D @just-baiting/eslint-config
+```
+
+```bash
+npm install -D @just-baiting/eslint-config
 ```
 
 ## Usage
