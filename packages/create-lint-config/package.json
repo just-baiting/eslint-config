@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://github.com/just-baiting/eslint-config/create-lint-config",
   "author": "Just Baiting",
-  "repository": "",
+  "repository": "https://github.com/just-baiting/eslint-config/",
   "license": "MIT",
   "private": false,
   "bin": "./bin/index.js",
