@@ -1,0 +1,23 @@
+{
+  "name": "@just-baiting/generator-lint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generators/app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "generator"
+  ],
+  "files": [
+    "generators"
+  ],
+  "author": "Michael Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "has-yarn": "^2.1.0",
+    "lodash": "^4.17.21",
+    "yeoman-generator": "^5.3.0"
+  }
+}
