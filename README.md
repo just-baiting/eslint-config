@@ -20,8 +20,18 @@ yarn add -D @just-baiting/eslint-config
 npm install -D @just-baiting/eslint-config
 ```
 
+Alternatively if you're starting a new project you can run the following: 
+
+```bash
+npx create @just-baiting/lint-config
+```
+
+```bash
+yarn create @just-baiting/lint-config
+```
+
 ## Usage
-Edit your ```.eslintrc.json``` with one of the following to use.
+If you've installed the packages manually you will need to edit your ```.eslintrc.json``` based on what you installed.
 
 ### Core
 
