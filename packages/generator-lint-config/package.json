@@ -13,8 +13,8 @@
   "files": [
     "generators"
   ],
-  "author": "Michael Nguyen",
-  "license": "ISC",
+  "author": "Just Baiting",
+  "license": "MIT",
   "private": false,
   "dependencies": {
     "has-yarn": "^2.1.0",
