@@ -12,7 +12,7 @@
   },
   "bin": "./bin/create-lint-config.js",
   "dependencies": {
-    "@just-baiting/generator-lint-config": "^1.0.0",
+    "@just-baiting/generator-lint-config": "^1.0.1",
     "yeoman-environment": "^3.4.1"
   }
 }
