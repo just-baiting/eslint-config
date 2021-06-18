@@ -12,6 +12,6 @@ module.exports = class extends Generator {
   }
 
   initalizing() {
-    this.composeWith('@just-baiting/lint-config:eslint-config');
+    this.composeWith(require.resolve('../eslint-config'));
   }
 };
