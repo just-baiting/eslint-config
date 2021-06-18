@@ -7,7 +7,8 @@
   "scripts": {
     "lerna:build": "lerna run build",
     "lerna:clean": "lerna clean --yes",
-    "lerna:release": "lerna publish from-package --yes"
+    "lerna:release": "lerna publish from-package --yes",
+    "lerna:release-canary": "lerna publish --canary"
   },
   "repository": {
     "type": "git",
