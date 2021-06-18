@@ -8,7 +8,8 @@
     "lerna:build": "lerna run build",
     "lerna:clean": "lerna clean --yes",
     "lerna:release": "lerna publish from-package --yes",
-    "lerna:release-canary": "lerna publish --canary"
+    "lerna:release-canary": "lerna publish --canary",
+    "lerna:version": "lerna version"
   },
   "repository": {
     "type": "git",
