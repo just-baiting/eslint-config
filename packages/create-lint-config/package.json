@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/create-lint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "homepage": "https://github.com/just-baiting/eslint-config/create-lint-config",
   "author": "Just Baiting",
@@ -10,7 +10,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": "./bin/index.js",
+  "bin": "./bin/create-lint-config.js",
   "dependencies": {
     "@just-baiting/generator-lint-config": "^1.0.0",
     "yeoman-environment": "^3.4.1"
