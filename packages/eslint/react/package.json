@@ -6,6 +6,9 @@
   "author": "Just Baiting",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "eslint-plugin-react": "^7.23.2"
   },

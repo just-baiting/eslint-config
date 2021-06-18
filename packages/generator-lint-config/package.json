@@ -16,6 +16,9 @@
   "author": "Just Baiting",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "has-yarn": "^2.1.0",
     "lodash": "^4.17.21",

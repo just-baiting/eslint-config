@@ -7,6 +7,9 @@
   "repository": "https://github.com/just-baiting/eslint-config/",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": "./bin/index.js",
   "dependencies": {
     "@just-baiting/generator-lint-config": "^1.0.0",
