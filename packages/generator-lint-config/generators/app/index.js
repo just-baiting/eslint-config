@@ -13,5 +13,6 @@ module.exports = class extends Generator {
 
   initalizing() {
     this.composeWith(require.resolve('../eslint-config'));
+    this.composeWith(require.resolve('../prettier-config'));
   }
 };
