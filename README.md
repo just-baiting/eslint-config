@@ -24,7 +24,7 @@ npm install -D @just-baiting/eslint-config
 Alternatively if you're starting a new project you can run the following: 
 
 ```bash
-npx create @just-baiting/lint-config
+npx -p yo -p @just-baiting/generator-lint-config -- yo @just-baiting/lint-config
 ```
 
 ```bash
