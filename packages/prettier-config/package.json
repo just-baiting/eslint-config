@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/just-baiting/lint-config/issues"
   },
-  "homepage": "https://github.com/just-baiting/lint-config/packages/prettier#readme",
+  "homepage": "https://github.com/just-baiting/lint-config/packages/prettier-config#readme",
   "private": false,
   "publishConfig": {
     "access": "public"
