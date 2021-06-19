@@ -18,6 +18,5 @@
   },
   "dependencies": {
     "prettier": "^2.2.1"
-  },
-  "gitHead": "8615e827e7ce71914bfe60ab846c6b7b0710cf63"
+  }
 }

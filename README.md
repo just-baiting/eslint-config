@@ -1,12 +1,13 @@
 # ESLint Config
 
-Shared eslint config for just-baiting projects
+Shared lint config for just-baiting projects
 
-Has 3 different individual packages:
+Has 4 different individual packages:
 
 - Base JS (@just-baiting/eslint-config)
 - React (@just-baiting/eslint-config-react)
 - Typescript (@just-baiting/eslint-config-typescript)
+- Prettier (@just-baiting/prettier-config)
 
 ## Installation
 
@@ -31,7 +32,7 @@ yarn create @just-baiting/lint-config
 ```
 
 ## Usage
-If you've installed the packages manually you will need to edit your ```.eslintrc.json``` based on what you installed.
+If you've installed the packages manually you will need to edit your ```.eslintrc.json``` or ```.prettierrc.js``` based on what you installed.
 
 ### Core
 
@@ -57,4 +58,11 @@ If you've installed the packages manually you will need to edit your ```.eslintr
     "react/react-in-jsx-scope": "off"
   }
 }
+```
+
+### Prettier
+```js
+module.exports = {
+  ...require('@just-baiting/prettier-config'),
+};
 ```
