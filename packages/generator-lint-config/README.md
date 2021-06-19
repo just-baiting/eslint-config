@@ -1,6 +1,6 @@
 # Intro
 
-This is a yeoman generator to install the eslint config files.
+This is a yeoman generator to install the eslint & prettier config files.
 
 ## Usage
 
