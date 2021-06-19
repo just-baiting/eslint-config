@@ -1,0 +1,23 @@
+{
+  "name": "@just-baiting/prettier-config",
+  "version": "0.0.2",
+  "description": "Shared prettier config for just-baiting",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-baiting/lint-config.git"
+  },
+  "author": "Just Baiting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/just-baiting/lint-config/issues"
+  },
+  "homepage": "https://github.com/just-baiting/lint-config/packages/prettier-config#readme",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "prettier": "^2.2.1"
+  },
+  "gitHead": "8615e827e7ce71914bfe60ab846c6b7b0710cf63"
+}
