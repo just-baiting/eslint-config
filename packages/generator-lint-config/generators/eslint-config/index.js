@@ -32,14 +32,52 @@ module.exports = class extends Generator {
           },
         ],
       },
+      {
+        type: 'checkbox',
+        name: 'environments',
+        message: 'Select the environments you need',
+        choices: [
+          {
+            name: 'Browser',
+            value: 'browser',
+          },
+          {
+            name: 'Node',
+            value: 'node',
+          },
+          {
+            name: 'ES6',
+            value: 'es6',
+          },
+          {
+            name: 'CommonJS',
+            value: 'commonjs',
+          },
+          {
+            name: 'AMD',
+            value: 'amd',
+          },
+          {
+            name: 'Jest',
+            value: 'jest',
+          },
+          {
+            name: 'Mocha',
+            value: 'mocha',
+          },
+        ],
+      },
     ]);
     this.answers.types = ['@just-baiting/eslint-config', ...this.answers.types];
   }
 
   writing() {
+    const envs = {};
+    this.answers.environments.forEach((env) => (envs[env] = true));
     this.fs.copy(this.templatePath('eslintignore'), this.destinationPath('.eslintignore'));
     this.fs.writeJSON(this.destinationPath('.eslintrc.json'), {
       extends: [...this.answers.types],
+      env: envs,
     });
   }
 
@@ -48,7 +86,6 @@ module.exports = class extends Generator {
       dev: true,
     };
     const deps = ['eslint', ...this.answers.types];
-
     if (hasYarn) {
       this.yarnInstall(deps, installObject);
     } else {
