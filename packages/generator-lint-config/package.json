@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/generator-lint-config",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "generators/app/index.js",
   "scripts": {
