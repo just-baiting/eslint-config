@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator');
-const hasYarn = require('has-yarn');
+const shell = require('shelljs');
 const _ = require('lodash');
 
 // Inject the Install mixin
@@ -44,7 +44,7 @@ module.exports = class extends Generator {
     if (!this.answers.includePrettier) {
       return;
     }
-    if (hasYarn) {
+    if (shell.which('yarn')) {
       this.yarnInstall(deps, installObject);
     } else {
       this.npmInstall(deps, installObject);

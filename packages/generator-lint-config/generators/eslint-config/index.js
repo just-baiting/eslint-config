@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator');
-const hasYarn = require('has-yarn');
+const shell = require('shelljs');
 const fs = require('fs');
 const _ = require('lodash');
 
@@ -104,7 +104,7 @@ module.exports = class extends Generator {
       dev: true,
     };
     const deps = ['eslint', ...this.answers.types];
-    if (hasYarn) {
+    if (shell.which('yarn')) {
       this.yarnInstall(deps, installObject);
     } else {
       this.npmInstall(deps, installObject);

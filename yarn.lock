@@ -23,13 +23,6 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@just-baiting/prettier-config@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@just-baiting/prettier-config/-/prettier-config-0.0.1.tgz#43306c2884dbc239d965317ae25b0aa55c8e09ae"
-  integrity sha512-7UFndngz1iCfwPrpYtZNuE9IgdgbjjF9SJ2gQUiOp8cJIUjjeOsU6Ni+H9m1Xq4q89a3uHRhfkiyHIYcn6Iohw==
-  dependencies:
-    prettier "^2.2.1"
-
 "@lerna/add@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@lerna/add/-/add-4.0.0.tgz#c36f57d132502a57b9e7058d1548b7a565ef183f"
@@ -2494,11 +2487,6 @@ has-unicode@^2.0.0, has-unicode@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
   integrity sha1-4Ob+aijPUROIVeCG0Wkedx3iqLk=
-
-has-yarn@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/has-yarn/-/has-yarn-2.1.0.tgz#137e11354a7b5bf11aa5cb649cf0c6f3ff2b2e77"
-  integrity sha512-UqBRqi4ju7T+TqGNdqAO0PaSVGsDGJUBQvk9eUWNGRY1CFGDzYhLWoM7JQEemnlvVcv/YEmc2wNW8BC24EnUsw==
 
 has@^1.0.3:
   version "1.0.3"
