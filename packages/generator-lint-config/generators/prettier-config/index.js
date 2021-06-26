@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator');
-const hasYarn = require('has-yarn');
+const shell = require('shelljs');
 const _ = require('lodash');
 
 // Inject the Install mixin
@@ -23,15 +23,15 @@ module.exports = class extends Generator {
           },
           {
             name: 'No',
-            value: false
-          }
-        ]
-      }
+            value: false,
+          },
+        ],
+      },
     ]);
   }
 
   writing() {
-    if(this.answers.includePrettier) {
+    if (this.answers.includePrettier) {
       this.fs.copy(this.templatePath('prettierrc.js'), this.destinationPath('.prettierrc.js'));
     }
   }
@@ -41,16 +41,13 @@ module.exports = class extends Generator {
       dev: true,
     };
     const deps = ['prettier', '@just-baiting/prettier-config'];
-    
-    if(!this.answers.includePrettier) {
+    if (!this.answers.includePrettier) {
       return;
     }
-
-    if (hasYarn) {
+    if (shell.which('yarn')) {
       this.yarnInstall(deps, installObject);
     } else {
       this.npmInstall(deps, installObject);
     }
   }
-
-}
+};
