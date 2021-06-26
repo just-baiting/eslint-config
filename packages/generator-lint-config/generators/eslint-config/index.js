@@ -1,5 +1,6 @@
 const Generator = require('yeoman-generator');
 const hasYarn = require('has-yarn');
+const fs = require('fs');
 const _ = require('lodash');
 
 // Inject the Install mixin
@@ -74,11 +75,28 @@ module.exports = class extends Generator {
   writing() {
     const envs = {};
     this.answers.environments.forEach((env) => (envs[env] = true));
-    this.fs.copy(this.templatePath('eslintignore'), this.destinationPath('.eslintignore'));
-    this.fs.writeJSON(this.destinationPath('.eslintrc.json'), {
+    const existingFile = ['.eslintrc', 'eslintrc.json'].filter((file) =>
+      fs.existsSync(this.destinationPath(file))
+    );
+    let fileName = '.eslintrc';
+    let fileContents = {
       extends: [...this.answers.types],
       env: envs,
-    });
+    };
+
+    if (existingFile.length) {
+      fileName = existingFile[0];
+      const contents = fs.readFileSync(this.destinationPath(fileName), { encoding: 'utf-8' });
+      fileContents = JSON.parse(contents);
+      fileContents.extends =
+        typeof fileContents.extends === 'string'
+          ? [fileContents.extends, ...this.answers.types]
+          : [...fileContents.extends, ...this.answers.types];
+      fileContents.env = { ...fileContents.env, ...envs };
+    }
+
+    fs.copyFileSync(this.templatePath('eslintignore'), this.destinationPath('.eslintignore'));
+    fs.writeFileSync(this.destinationPath(fileName), JSON.stringify(fileContents, null, 2));
   }
 
   install() {
