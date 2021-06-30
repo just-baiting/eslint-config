@@ -75,7 +75,7 @@ module.exports = class extends Generator {
   writing() {
     const envs = {};
     this.answers.environments.forEach((env) => (envs[env] = true));
-    const existingFile = ['.eslintrc', 'eslintrc.json'].filter((file) =>
+    const existingFile = ['.eslintrc', '.eslintrc.json'].filter((file) =>
       fs.existsSync(this.destinationPath(file))
     );
     let fileName = '.eslintrc';
