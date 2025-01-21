@@ -2,6 +2,7 @@
   "name": "@just-baiting/lint-generator",
   "version": "1.0.0",
   "description": "CLI Generator for ESLint & Prettier",
+  "private": false,
   "bin": {
     "lint-generator": "dist/index.js"
   },
@@ -27,5 +28,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

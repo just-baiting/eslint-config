@@ -2,7 +2,7 @@
   "name": "eslint-config",
   "author": "Michael Nguyen",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/just-baiting/eslint-config.git"
