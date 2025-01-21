@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/eslint-config-typescript",
-  "version": "0.0.3",
+  "version": "1.1.0",
   "description": "Shared Typescript ESLint config for just-baiting",
   "repository": "https://github.com/just-baiting/lint-config",
   "author": "Just Baiting",
@@ -10,10 +10,10 @@
     "access": "public"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0"
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0"
   },
   "devDependencies": {
-    "typescript": "^4.2.3"
+    "typescript": "^5.7.3"
   }
 }

@@ -1,0 +1,35 @@
+{
+  "name": "@just-baiting/lint-generator",
+  "version": "1.1.0",
+  "description": "CLI Generator for ESLint & Prettier",
+  "private": false,
+  "bin": {
+    "lint-generator": "dist/index.js"
+  },
+  "scripts": {
+    "build": "ncc build lint-generator.ts -o dist",
+    "prepublishOnly": "cd ../ && turbo run build"
+  },
+  "author": "Michael Nguyen",
+  "license": "ISC",
+  "devDependencies": {
+    "@just-baiting/eslint-config": "workspace:*",
+    "@just-baiting/eslint-config-react": "workspace:*",
+    "@just-baiting/eslint-config-typescript": "workspace:*",
+    "@just-baiting/prettier-config": "workspace:*",
+    "@types/commander": "^2.12.5",
+    "@types/node": "^22.10.2",
+    "@types/prompts": "^2.4.9",
+    "@vercel/ncc": "^0.38.3",
+    "commander": "^12.1.0",
+    "prettier": "^3.4.2",
+    "prompts": "^2.4.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
