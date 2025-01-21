@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/eslint-config-react",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Shared React ESLint config for just baiting",
   "repository": "https://github.com/just-baiting/eslint-config",
   "author": "Just Baiting",
@@ -10,7 +10,7 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.37.4"
   },
   "peerDependencies": {
     "@just-baiting/eslint-config": "*"

@@ -7,7 +7,11 @@ module.exports = {
       legacyDecorators: true,
     },
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:no-unsanitized/DOM'],
+  extends: [
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:no-unsanitized/DOM',
+  ],
   env: {
     es6: true,
   },
