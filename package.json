@@ -1,6 +1,16 @@
 {
-  "name": "lint-config",
+  "name": "eslint-config",
+  "author": "Michael Nguyen",
+  "license": "ISC",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-baiting/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/just-baiting/eslint-config/issues"
+  },
+  "homepage": "https://github.com/just-baiting/eslint-config#readme",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
