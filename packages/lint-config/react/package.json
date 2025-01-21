@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/eslint-config-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shared React ESLint config for just baiting",
   "repository": "https://github.com/just-baiting/eslint-config",
   "author": "Just Baiting",
