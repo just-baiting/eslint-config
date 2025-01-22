@@ -1,5 +1,12 @@
 # @just-baiting/eslint-config-react
 
+## 4.0.0
+
+### Patch Changes
+
+- Updated dependencies [7406b6e]
+  - @just-baiting/eslint-config@3.0.0
+
 ## 3.0.0
 
 ### Patch Changes

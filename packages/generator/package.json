@@ -1,6 +1,6 @@
 {
   "name": "@just-baiting/lint-generator",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "CLI Generator for ESLint & Prettier",
   "private": false,
   "bin": {

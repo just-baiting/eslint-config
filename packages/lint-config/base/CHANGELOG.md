@@ -1,5 +1,11 @@
 # @just-baiting/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- 7406b6e: lockstep version
+
 ## 2.0.0
 
 ### Major Changes
