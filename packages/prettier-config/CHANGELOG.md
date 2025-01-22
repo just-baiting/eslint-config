@@ -1,5 +1,11 @@
 # @just-baiting/prettier-config
 
+## 2.0.0
+
+### Major Changes
+
+- 7819afd: lockstep versions
+
 ## 1.2.0
 
 ### Minor Changes
