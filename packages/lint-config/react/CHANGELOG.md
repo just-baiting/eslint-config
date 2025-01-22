@@ -1,5 +1,16 @@
 # @just-baiting/eslint-config-react
 
+## 2.0.0
+
+### Minor Changes
+
+- b8a125d: Minor bump to version
+
+### Patch Changes
+
+- Updated dependencies [b8a125d]
+  - @just-baiting/eslint-config@1.2.0
+
 ## 1.1.2
 
 ### Patch Changes

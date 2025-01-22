@@ -1,5 +1,11 @@
 # @just-baiting/prettier-config
 
+## 1.2.0
+
+### Minor Changes
+
+- b8a125d: Minor bump to version
+
 ## 1.1.2
 
 ### Patch Changes
