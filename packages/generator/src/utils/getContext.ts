@@ -16,6 +16,7 @@ export interface Context {
   )[];
   ref: string;
   fancy?: boolean;
+  version?: boolean;
   exit(code: number): never;
 }
 
@@ -31,6 +32,8 @@ export async function getContext(argv: string[]): Promise<Context> {
       "--help": Boolean,
       "--fancy": Boolean,
       "-h": "--help",
+      "--version": Boolean,
+      "-v": "--version",
     },
     { argv, permissive: false },
   );
@@ -43,6 +46,7 @@ export async function getContext(argv: string[]): Promise<Context> {
     "--environments": environments,
     "--fancy": fancy,
     "--ref": ref,
+    "--version": version,
   } = flags;
 
   const context: Context = {
@@ -61,6 +65,7 @@ export async function getContext(argv: string[]): Promise<Context> {
     fancy,
     ref: ref ?? "latest",
     cwd,
+    version,
     exit(code) {
       process.exit(code);
     },
