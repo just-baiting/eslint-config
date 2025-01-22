@@ -1,5 +1,11 @@
 # @just-baiting/prettier-config
 
+## 1.1.2
+
+### Patch Changes
+
+- 39fe81d: x
+
 ## 1.1.1
 
 ### Patch Changes
