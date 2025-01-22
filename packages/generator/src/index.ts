@@ -4,10 +4,38 @@ import fs from "fs";
 import path from "path";
 import { getContext, Context } from "./utils/getContext";
 import { installDeps } from "./utils/installDeps";
+import { version } from "../package.json";
 
 export async function main(): Promise<void> {
   const argv = process.argv.slice(2).filter((arg) => arg !== "--");
   const context = await getContext(argv);
+
+  if (context.help) {
+    const helpText = `
+      Usage:
+        npx @just-baiting/lint-generator [options]
+      
+      Options:
+        --help | -h           ${chalk.green("Display help text")}
+        --version | -v        ${chalk.green("Show version number")}
+        --generator | -g      ${chalk.green("Specify which generator to run out of prettier, eslint or editor")}
+        --template | -t       ${chalk.green("Specify which template to use out of base, react or typescript (if using eslint generator)")}
+        --environments | -e   ${chalk.green("Specify which environments to use out of browser, node, es6, commonjs, amd, jest, mocha (if using eslint generator)")}
+      
+      Examples:
+        npx @just-baiting/lint-generator
+        npx @just-baiting/lint-generator --generator prettier
+        npx @just-baiting/lint-generator --generator eslint --template react --environments browser --environments node
+        npx @just-baiting/lint-generator --generator editor
+    `;
+    console.log(helpText)
+    return;
+  }
+
+  if (context.version) {
+    console.log(chalk.redBright(`${version}`));
+    return;
+  }
 
   let generator = context.generator || null;
 
@@ -64,7 +92,7 @@ async function runEditorGenerator(): Promise<void> {
     path.join(__dirname, "template", "editor", "editorconfig"),
     path.join(currentDir, ".editorconfig"),
   );
-  console.log(chalk.greenBright("🎉 Editor config file created! 🎉"));
+  console.log(chalk.green("🎉 Editor config file created! 🎉"));
 
   return;
 }
@@ -102,7 +130,7 @@ async function runPrettierGenerator(context: Context): Promise<void> {
       path.join(__dirname, "template", "prettier", "prettierrc.js"),
       path.join(currentDir, ".prettierrc.js"),
     );
-    console.log(chalk.greenBright("🎉 Prettier file created! 🎉"));
+    console.log(chalk.green("🎉 Prettier file created! 🎉"));
   }
 
   // install prettier dev dependency
